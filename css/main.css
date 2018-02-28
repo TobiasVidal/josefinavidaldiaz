@@ -159,10 +159,12 @@ img.polilla {
 li a {
     display: inline-block;
     padding-bottom: 3px;
+    transition: box-shadow 0.6s ease;
 }
 li a:hover {
-    padding-bottom: 2px;
-    border-bottom: 1px solid #acaaaa;
+    box-shadow: 0px 1px 0px 0px #acaaaa;
+    /*padding-bottom: 2px;
+    border-bottom: 1px solid #acaaaa;*/
 }
 .site-content {    
     float: left;
