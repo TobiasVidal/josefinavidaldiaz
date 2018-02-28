@@ -97,46 +97,65 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* {outline: 1px solid green; } */
+@font-face {
+    font-family: Orator-Std-Medium;
+    src: url(../fonts/Orator-Std-Medium.ttf);
+}
 body {
     min-height: 100vh;
 }
 .main-content {
     height: 100%;
 }
+.italic {
+    font-style: italic;
+}
 /* LOGO */
 .logo-container {
     width: 100vw;
-    height: 85px;
+    height: 64px;
     overflow: visible;
     position: relative;
     padding-left: 60px;
 }
 #logo {
-    height: 64px;
-    margin-top: -10px;
+    width: 107px;
     float: left;
 }
 img.polilla {
-    height: 165px;
+    height: 147px;
     float: left;
     position: absolute;
+    margin-top: -18px;
+    margin-left: 50px;
 }
 /* SIDE NAV */
 .sidebar-nav {    
     float: left;
     width: 330px;
     height: 100%;
+    padding-left: 30px;
 }
 .sidebar-nav ul {
     list-style: none;
 }
-.site-content {
-    width: 70%;
+.sidebar-nav ul li {
+    margin-bottom: 30px;
+    font-family: Orator-Std-Medium, "Times New Roman", Serif;
+    color: #acaaaa;
+}
+.sidebar-nav ul li:last-child {
+    margin-bottom: 0;
+}
+.site-content {    
     float: left;
+}
+.sidebar-img {
+    width: 300px;
 }
 /* CONTENT */
 img.dibujo {
-    width: 500px;
+    width: 400px;
     margin-left: 100px;
 }
 
