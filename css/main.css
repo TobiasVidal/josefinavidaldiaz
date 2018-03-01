@@ -106,6 +106,7 @@ body {
 }
 .main-content {
     height: 100%;
+    padding-top: 55px;
 }
 .italic {
     font-style: italic;
@@ -117,12 +118,17 @@ a:hover {
     cursor: pointer;
 }
 /* LOGO */
-.logo-container {
+/*.logo-container {
     width: 100vw;
     height: 60px;
     overflow: visible;
     position: relative;
     padding-left: 60px;
+}*/
+.logo-container {
+    overflow: visible;
+    position: relative;
+    padding: 0 0 20px 30px;
 }
 #logo {
     width: 107px;
@@ -182,9 +188,10 @@ li a:hover {
     color: #878585;
 }
 /* CONTENT */
-img.dibujo {
+img.schone {
     width: 355px;
     margin-left: 80px;
+    margin-top: 50px;
 }
 
 
