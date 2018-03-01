@@ -106,7 +106,7 @@ body {
 }
 .main-content {
     height: 100%;
-    padding-top: 55px;
+    padding-top: 42px;
 }
 .italic {
     font-style: italic;
@@ -131,7 +131,7 @@ a:hover {
     padding: 0 0 20px 30px;
 }
 #logo {
-    width: 107px;
+    width: 102px;
     float: left;
     margin-left: 6px;
 }
@@ -165,9 +165,10 @@ img.polilla {
 li a {
     display: inline-block;
     padding-bottom: 3px;
+    color: #acaaaa;
     transition: box-shadow 0.6s ease;
 }
-li a:hover {
+li a:hover, li a.active {
     box-shadow: 0px 1px 0px 0px #acaaaa;
     /*padding-bottom: 2px;
     border-bottom: 1px solid #acaaaa;*/
@@ -180,22 +181,42 @@ li a:hover {
     padding-left: 25px;
 }
 .redes-sociales {
-    padding: 30px 0 0 40px;
+    padding: 14px 0 0 40px;
 }
 .redes-sociales a {
     font-size: 17px;
     font-family: Orator-Std-Medium, "Times New Roman", Serif;
     color: #878585;
 }
-/* CONTENT */
+/* Index Content */
 img.schone {
     width: 355px;
     margin-left: 80px;
     margin-top: 50px;
 }
 
-
-
+/* Impresiones Content */
+div.impresiones {
+    margin-left: 75px;
+}
+.impresiones-dibujo span, .fecha-obra {
+    display: block;
+    font-family: Orator-Std-Medium, "Times New Roman", Serif;
+    color: #acaaaa;
+    font-size: 11px;
+    
+}
+.impresiones-dibujo img {
+    width: 400px;
+}
+.fecha-obra {
+    margin-top: 8px;
+}
+.impresiones-dibujo .descripcion {
+    margin-left: 8px;
+    font-style: italic;
+    margin-top: 35px;
+}
 
 
 
