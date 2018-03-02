@@ -103,6 +103,7 @@ textarea {
  * 04 - Index Content
  * 05 - Impresiones Content
  * 06 - Signo
+ * 07 - Sketchbook
  */
  /* 01 General */
 @font-face {
@@ -235,9 +236,17 @@ img.schone {
 .signo img:first-of-type {
     padding-top: 30px;
 }
-
-
-
+/* 07 Sketchbook */
+.sketchbook p {    
+    font-size: 12px;
+    line-height: 1;
+}
+.sketchbook p.materiales {
+    text-indent: 0;
+}
+.sketchbook img {
+    width: 700px;
+}
 
 
 
