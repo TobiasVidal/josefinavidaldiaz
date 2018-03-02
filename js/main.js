@@ -1,3 +1,16 @@
+//Codigo para toda la pagina
+$(window).on("scroll", function(){
+    if($(document).scrollTop() > 800){
+        $('#back-to-top').fadeIn();
+    } else {
+        $('#back-to-top').fadeOut();
+    }
+});
+$('#back-to-top').click(function(){
+    $('html, body').animate({
+    scrollTop: $("body").offset().top
+    }, 1000);
+});
 
 //Codigo para SOMMERREGEN.HTML
 var url = window.location.pathname.toLowerCase();
