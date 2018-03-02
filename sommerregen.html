@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <script defer src="js/fontawesome-all.min.js"></script>        
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -50,9 +51,36 @@
                 </div>
                 
             </div>
-            <div class="site-content">
+            <div class="site-content sommerregen clearfix">
                 <span class="fecha-obra">2017</span>
+                <p class="descripcion italic">
+                    Fragmentos seleccionados de la novela gráfica "Lluvia de Verano" realizada
+                    enteramente a lápiz sobre papel. Textos de mi autoría.
+                </p>
+                <div id="carousel">
+                    <div id="slides" data-current-page="0">
+                        <!-- Los div esta escritos asi "raro", pegados al final, para
+                            evitar que quede ningun espacio entre ellos. -->
+                        <div><img class="vertical" src="img/sommerregen/0.jpg"></div><div
+                        ><img class="vertical" src="img/sommerregen/1.jpg"></div><div
+                        ><img class="horizontal" src="img/sommerregen/2.jpg"></div><div
+                        ><img class="horizontal" src="img/sommerregen/3.jpg"></div><div
+                        ><img class="horizontal" src="img/sommerregen/4.jpg"></div><div
+                        ><img class="horizontal" src="img/sommerregen/5.jpg"></div><div
+                        ><img class="horizontal" src="img/sommerregen/6.jpg"></div><div
+                        ><img class="horizontal" src="img/sommerregen/7.jpg"></div><div
+                        ><img class="horizontal" src="img/sommerregen/8.jpg"></div>
+                    </div>                    
+                </div>
+                <div class="container-flechas">
+                    <a class="flecha" onclick="carouselArrowClick('right')"><i class="fas fa-angle-right"></i></a>
+                    <a class="flecha" onclick="carouselArrowClick('left')"><i class="fas fa-angle-left"></i></a>
+                    <div class="contador-img">
+                        <span id="contador-slide">1</span>/9
+                    </div>
+                </div>
             </div>
+            <div class="footer"></div>
         </div>     
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
