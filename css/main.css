@@ -104,6 +104,7 @@ textarea {
  * 05 - Impresiones Content
  * 06 - Signo
  * 07 - Sketchbook
+ * 08 - Historia
  */
  /* 01 General */
 @font-face {
@@ -137,6 +138,9 @@ a:hover {
     max-width: 660px;
     font-family: Orator-Std-Medium, "Times New Roman", Serif;
     color: #acaaaa;
+}
+materiales {
+    text-indent: 0;
 }
 /* 02 Logo */
 .logo-container {
@@ -226,9 +230,6 @@ img.schone {
     font-size: 12px;
     line-height: 1;
 }
-.signo p.materiales {
-    text-indent: 0;
-}
 .signo img {
     width: 500px;
     padding-bottom: 20px;
@@ -241,14 +242,25 @@ img.schone {
     font-size: 12px;
     line-height: 1;
 }
-.sketchbook p.materiales {
-    text-indent: 0;
-}
 .sketchbook img {
     width: 700px;
 }
-
-
+.signo img {
+    width: 500px;
+    padding-bottom: 20px;
+}
+.signo img:first-of-type {
+    padding-top: 30px;
+}
+/* 08 Historia */
+.historia img {
+    width: 500px;
+    padding-bottom: 20px;
+}
+.historia p {    
+    font-size: 12px;
+    line-height: 1;
+}
 
 /* ==========================================================================
    Helper classes
