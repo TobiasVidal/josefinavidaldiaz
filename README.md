@@ -1,6 +1,8 @@
 # JosefinaVidalDiaz
 Este repository es una pagina web!
 
-Puede verse desde [TobiasVidal.github.io/JosefinaVidalDiaz](https://tobiasvidal.github.io/josefinavidaldiaz/)
+Puede verse desde [TobiasVidal.github.io/JosefinaVidalDiaz](https://tobiasvidal.github.io/josefinavidaldiaz/) o [JosefinaVidalDiaz.com](http://josefinavidaldiaz.com/)
 
-ó (próximamente) desde josefinavidaldiaz.com
+Posibles cambios a futuro:
+- Agregar código para visualización mobile
+- Agregar archives con imágenes viejas
