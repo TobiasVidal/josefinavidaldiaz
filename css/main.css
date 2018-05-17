@@ -391,7 +391,7 @@ div.contador-img {
 }
 #mobile-menu .sidenav-toggle {
     background-color: white;
-    border: 1px solid #acaaaa;
+    border: none;
     border-radius: 8px;
     transition: background-color 1s ease;
 }
@@ -401,6 +401,9 @@ div.contador-img {
     height: 2px;
     background-color: #acaaaa;
     margin: 6px 0;
+}
+*:focus {
+    outline: none;
 }
 @media only screen and (max-width: 780px) {
     #main-content {
@@ -442,6 +445,12 @@ div.contador-img {
     }
     .sidebar-img {
         width: 160px;
+    }
+    #mobile-menu h6 {
+        color: #a5aaaa;
+        font-family: Orator-Std-Medium, "Times New Roman", Serif;
+        font-weight: 500;
+        margin: 5px 0 0;
     }
 }
 /* ==========================================================================
