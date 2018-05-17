@@ -106,18 +106,18 @@ textarea {
  * 07 - Sketchbook
  * 08 - Historia
  * 09 - Sommerregen
+ * 10 - Menu Mobile
  */
  /* 01 General */
 @font-face {
     font-family: Orator-Std-Medium;
     src: url(../fonts/Orator-Std-Medium.ttf);
 }
-/*body {
-    min-height: 100vh;
-}*/
-.main-content {
+#main-content {
     height: 100%;
     padding-top: 42px;
+    padding-left: 30px;
+    position: relative;
 }
 .italic {
     font-style: italic;
@@ -166,6 +166,23 @@ materiales {
 #back-to-top:active, #back-to-top:focus {
     outline: 0;
 }
+@media only screen and (max-width: 780px) {
+    .site-content {
+        width: 90%;
+        margin: 50px 5% 0;
+    }
+    #back-to-top {
+        bottom: 15px;
+        left: auto;
+        right: 15px;
+        padding: 5px 10px;
+        background-color: #f5f5f5;
+        border: 1px solid #a5aaaa;
+        border-radius: 16px;
+        font-size: 12px;
+        width: 50px;
+    }
+}
 /* 02 Logo */
 .logo-container {
     overflow: visible;
@@ -179,17 +196,17 @@ materiales {
 }
 img.polilla {
     height: 147px;
-    float: left;
     position: absolute;
-    margin-top: -18px;
-    margin-left: 50px;
+    top: -18px;
+    right: 19px;
 }
 /* 03 Side nav */
 .sidebar-nav {    
-    float: left;
-    width: 330px;
+    float: left;    
     height: 100%;
-    padding-left: 30px;
+}
+.sidenav-content {
+    width: 330px;
 }
 .sidebar-nav ul {
     list-style: none;
@@ -211,7 +228,7 @@ li a {
     transition: box-shadow 0.6s ease;
 }
 li a:hover, li a.active {
-    box-shadow: 0px 1px 0px 0px #acaaaa;
+    box-shadow: 0px 3px 0px -2px #acaaaa;
 }
 .sidebar-img {
     width: 270px;
@@ -231,11 +248,13 @@ img.schone {
     margin-left: 20px;
     margin-top: 50px;
 }
-
+@media only screen and (max-width: 780px) {
+    img.schone {
+        width: 100%;
+        margin: 0;
+    }
+}
 /* 05 Impresiones Content */
-/*div.impresiones {
-    margin-left: 75px;
-}*/
 .impresiones-dibujo span, .fecha-obra {
     display: block;
     font-family: Orator-Std-Medium, "Times New Roman", Serif;
@@ -244,6 +263,7 @@ img.schone {
 }
 .impresiones-dibujo img {
     width: 400px;
+    max-width: 100%;
     margin-bottom: 35px;
 }
 .fecha-obra {
@@ -256,6 +276,7 @@ img.schone {
 }
 .signo img {
     width: 500px;
+    max-width: 100%;
     padding-bottom: 20px;
 }
 .signo img:first-of-type {
@@ -268,6 +289,7 @@ img.schone {
 }
 .sketchbook img {
     width: 700px;
+    max-width: 100%;
 }
 .signo img {
     width: 500px;
@@ -279,6 +301,7 @@ img.schone {
 /* 08 Historia */
 .historia img {
     width: 500px;
+    max-width: 100%;
     padding-bottom: 20px;
 }
 .historia p {    
@@ -289,12 +312,13 @@ img.schone {
 .sommerregen p {    
     font-size: 12px;
     line-height: 1;
-    width: 487px;
+    max-width: 487px;
     text-indent: 0;
 }
 #carousel {
   position: relative;
   width: 630px;
+  max-width: 100%;
   height: 550px;
   margin: 0;
   overflow-x: hidden;
@@ -307,6 +331,7 @@ img.schone {
 }
 #slides > div {
   width: 630px;
+  max-width: 100%;
   height: 550px;
   display: inline-block;
 }
@@ -332,6 +357,85 @@ div.contador-img {
     font-family: Orator-Std-Medium, "Times New Roman", Serif;
     color: #acaaaa;
     margin-top: 224px;
+}
+@media only screen and (max-width: 780px) {
+    #slides img.vertical {
+        height: 80%;
+        margin: 0 auto;
+    }
+    #slides img.horizontal {
+        width: 100%;
+    }
+    .container-flechas {
+        margin: 0;
+        float: none;
+        position: relative;
+        top: -100px;
+    }
+    a.flecha {
+        float: right;
+        margin-right: 20px;
+    }
+}
+/* 10 Menu Mobile */
+#mobile-menu {
+    display: none;
+    padding: 10px;
+}
+#mobile-menu .sidenav-toggle {
+    background-color: white;
+    border: 1px solid #acaaaa;
+    border-radius: 8px;
+    transition: background-color 1s ease;
+}
+.icon-bar {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #acaaaa;
+    margin: 6px 0;
+}
+@media only screen and (max-width: 780px) {
+    #main-content {
+        padding: 0;
+    }
+    #main-content > .sidebar-nav {
+        max-width: 0;
+        overflow: hidden;
+        position: absolute;
+        background-color: white;
+        transition: max-width 1s ease;
+        border-radius: 0 0 10px;
+    }
+    #mobile-menu {
+        display: block;
+    }
+    #mobile-menu > button.sidenav-toggle {
+        float: left;
+    }
+    #mobile-menu > button.sidenav-toggle.active {
+        background-color: #f5f5f5;
+    }
+    #mobile-menu img.polilla {
+        height: 110px;
+        top: -10px;
+        z-index: 2;
+    }
+    #logo {
+        margin-left: 14px;
+        margin-top: -3px;
+    }
+    .sidebar-nav {
+        padding-bottom: 50px;
+        height: auto;
+        z-index: 1;
+    }
+    .sidebar-nav .logo-container {
+        display: none;
+    }
+    .sidebar-img {
+        width: 160px;
+    }
 }
 /* ==========================================================================
    Helper classes

@@ -1,4 +1,4 @@
-//Codigo para toda la pagina
+//Codigo GENERAL - Start
 $(window).on("scroll", function(){
     if($(document).scrollTop() > 800){
         $('#back-to-top').fadeIn();
@@ -11,12 +11,29 @@ $('#back-to-top').click(function(){
     scrollTop: $("body").offset().top
     }, 1000);
 });
+//Menu Mobile
+$(function() {
+    $('#mobile-menu').load('templates/top-nav.html', function() {
+        $('#mobile-menu > button.sidenav-toggle').click(function() {
+            var sidenav = $('#main-content > .sidebar-nav');
+            $(this).toggleClass("active");
+            if(sidenav.css('max-width') === '0px') {                            
+                sidenav.css('border-right', '2px solid #acaaaa');
+                sidenav.css('border-bottom', '2px solid #acaaaa');
+                sidenav.css('max-width', '100%');                            
+            } else {
+                sidenav.css('max-width', '0px');
+                sidenav.css('border', 'none');
+            }
+        });
+    });                
+});
+//Codigo GENERAL - End
 
 //Codigo para SOMMERREGEN.HTML
 var url = window.location.pathname.toLowerCase();
 console.log(url);
 if(url.includes("sommerregen.html")) {
-    console.log("estamos en sommerregen");
     var imagenesMovidasPorClick = 1;//Default
     var imgMovPorClickSmall = 1;//Mobile
     var imgMovPorClickMedium = 2;//Tablet y Mobile horiz
