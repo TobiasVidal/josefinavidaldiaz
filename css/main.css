@@ -360,8 +360,8 @@ div.contador-img {
 }
 @media only screen and (max-width: 780px) {
     #slides img.vertical {
-        height: 80%;
-        margin: 0 auto;
+        height: 78%;
+        margin: 0 3%;
     }
     #slides img.horizontal {
         width: 100%;
