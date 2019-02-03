@@ -135,7 +135,6 @@ a:hover {
 }
 .descripcion {
     text-indent: 8px;
-    font-style: italic;
     max-width: 660px;
     font-family: Orator-Std-Medium, "Times New Roman", Serif;
     color: #acaaaa;
