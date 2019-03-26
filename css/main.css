@@ -108,6 +108,7 @@ textarea {
  * 09 - Sommerregen
  * 10 - Menu Mobile
  * 11 - Lost & Found
+ * 12 - Flickering light
  */
  /* 01 General */
 @font-face {
@@ -176,6 +177,14 @@ materiales {
     display: block !important;
 }
 
+.float-right {
+  float: right !important;
+}
+
+.float-left {
+  float: left !important;
+}
+
 @media only screen and (max-width: 780px) {
     .site-content {
         width: 90%;
@@ -221,9 +230,10 @@ img.polilla {
 }
 .sidebar-nav ul {
     list-style: none;
+    margin-bottom: 0px;
 }
 .sidebar-nav ul li {
-    margin-bottom: 29px;
+    margin-bottom: 20px;
     font-size: 17px;
     font-family: Orator-Std-Medium, "Times New Roman", Serif;
     color: #acaaaa;
@@ -246,7 +256,7 @@ li a:hover, li a.active {
     padding-left: 25px;
 }
 .redes-sociales {
-    padding: 14px 0 0 40px;
+    padding-left: 40px;
 }
 .redes-sociales a {
     font-size: 17px;
@@ -266,19 +276,20 @@ img.schone {
     }
 }
 /* 05 Impresiones Content */
-.impresiones-dibujo span, .fecha-obra {
-    display: block;
-    font-family: Orator-Std-Medium, "Times New Roman", Serif;
-    color: #acaaaa;
-    font-size: 11px;    
-}
-.impresiones-dibujo img {
-    width: 400px;
-    max-width: 100%;
-    margin-bottom: 35px;
+.impresiones-img-group {
+  height: 42vw;
+  overflow: visible;
+  margin-bottom: 20px;
 }
 .fecha-obra {
-    margin: 8px 0 5px;
+  margin: 8px 0 5px;
+  display: block;
+  font-family: Orator-Std-Medium, "Times New Roman", Serif;
+  color: #acaaaa;
+  font-size: 11px;    
+}
+.impresiones img {
+    height: 42vw;    
 }
 /* 06 Signo */
 .signo p {    
@@ -455,8 +466,7 @@ div.contador-img {
 }
 /* 10 Lost & Found */
 .img-hover-container {
-    position: relative;
-    margin-bottom: 1em;
+  position: relative;
 }
 
 .img-hover-container img.bottom {
@@ -464,25 +474,126 @@ div.contador-img {
   z-index: -1;
   left:0;
 }
-
 .img-hover-container.img-vertical img {
-    width: 46%;
+  width: 46%;
 }
 
 .img-hover-container.img-horizontal img {
-    width: 65%;
+  width: 65%;
 }
 
 .img-hover-container img.top {
-    z-index: 1;    
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+  z-index: 1;    
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .img-hover-container img.top:hover {
-    opacity:0;
+    opacity: 0;
+}
+
+/* 12 - Flickering light */
+#flickering-light-img-container {
+  position: relative;
+  width: 54vw;
+  height: 280vw;
+}
+
+img.flickering {
+  position: absolute;
+}
+
+img.flickering-right {
+  right: 0;
+}
+
+img.flickering-left {
+  left: 0;
+}
+
+#flickering-0 {
+  height: 32vw;
+  width: auto;
+}
+
+#flickering-1 {
+  height: 36vw;
+  width: auto;
+  top: 4vw;
+}
+
+#flickering-2 {
+  height: 36vw;
+  width: auto;
+  top: 34vw;
+}
+
+#flickering-3 {
+  height: 34vw;
+  width: auto;
+  top: 42vw;
+}
+
+#flickering-4 {
+  height: 34vw;
+  width: auto;
+  top: 72vw;
+}
+
+#flickering-5 {
+  height: 37vw;
+  width: auto;
+  top: 78vw;
+}
+
+#flickering-6 {
+  height: 34vw;
+  width: auto;
+  top: 117vw;
+}
+
+#flickering-7 {
+  height: 37vw;
+  width: auto;
+  top: 117vw;
+}
+
+#flickering-8 {
+  height: 37vw;
+  width: auto;
+  top: 156vw;
+}
+
+#flickering-9 {
+  height: 33vw;
+  width: auto;
+  top: 158vw;
+}
+
+#flickering-10 {
+  height: 38vw;
+  width: auto;
+  top: 195vw;
+}
+
+#flickering-11 {
+  height: 32vw;
+  width: auto;
+  top: 196vw;
+}
+
+#flickering-12 {
+  height: 34vw;
+  width: auto;
+  top: 235vw;
+}
+
+#flickering-13 {
+  height: 39vw;
+  width: auto;
+  top: 237vw;
 }
 
 /* ==========================================================================

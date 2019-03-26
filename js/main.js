@@ -39,7 +39,7 @@ if(url.includes("sommerregen.html")) {
     var imgMovPorClickMedium = 2;//Tablet y Mobile horiz
     var imgMovPorClickLarge = 2;//Desktop
 
-    var cantImgsEnCarousel = 9;
+    var cantImgsEnCarousel = 8;
     var mobileMaxWidth = 480;
     var tabletMaxWidth = 880;
     //De a cuantas imagenes mostramos en cada pantalla
