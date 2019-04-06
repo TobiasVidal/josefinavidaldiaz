@@ -130,11 +130,7 @@ a {
 a:hover {    
     cursor: pointer;
 }
-.site-content {
-    float: left;
-    margin-left: 3%;
-    max-width: 72%;
-}
+
 .descripcion {
     max-width: 660px;
     font-size: 12px;
@@ -200,6 +196,14 @@ materiales {
         border-radius: 16px;
         font-size: 12px;
         width: 50px;
+    }
+}
+
+@media only screen and (min-width: 781px) {
+    .site-content {
+        float: left;
+        margin-left: 3%;
+        max-width: 72%;
     }
 }
 
@@ -277,8 +281,6 @@ img.schone {
 }
 /* 05 Impresiones Content */
 .impresiones-img-group {
-  height: 42vw;
-  overflow: visible;
   margin-bottom: 20px;
 }
 .fecha-obra {
@@ -288,8 +290,17 @@ img.schone {
   color: #acaaaa;
   font-size: 11px;    
 }
-.impresiones img {
-    height: 42vw;    
+
+@media only screen and (max-width: 780px) {
+    .impresiones img {
+        width: 90%;
+        margin: 0 4%;
+    }
+}
+@media only screen and (min-width: 781px) {
+    .impresiones img {
+        height: 42vw;    
+    }
 }
 /* 06 Signo */
 .signo p {    
@@ -495,105 +506,118 @@ div.contador-img {
 }
 
 /* 12 - Flickering light */
-#flickering-light-img-container {
-  position: relative;
-  width: 54vw;
-  height: 280vw;
-}
 
-img.flickering {
-  position: absolute;
+@media only screen and (max-width: 780px) {
+    #flickering-light-img-container {
+      width: 100vw;
+    }
+    
+    #flickering-light-img-container img {
+        width: 85%;
+        margin-bottom: 10px;
+    }
 }
+@media only screen and (min-width: 781px) {
+    #flickering-light-img-container {
+      position: relative;
+      width: 54vw;
+      height: 280vw;
+    }
 
-img.flickering-right {
-  right: 0;
-}
+    img.flickering {
+      position: absolute;
+    }
 
-img.flickering-left {
-  left: 0;
-}
+    img.flickering-right {
+      right: 0;
+    }
 
-#flickering-0 {
-  height: 32vw;
-  width: auto;
-}
+    img.flickering-left {
+      left: 0;
+    }
 
-#flickering-1 {
-  height: 36vw;
-  width: auto;
-  top: 4vw;
-}
+    #flickering-0 {
+      height: 32vw;
+      width: auto;
+    }
 
-#flickering-2 {
-  height: 36vw;
-  width: auto;
-  top: 34vw;
-}
+    #flickering-1 {
+      height: 36vw;
+      width: auto;
+      top: 4vw;
+    }
 
-#flickering-3 {
-  height: 34vw;
-  width: auto;
-  top: 42vw;
-}
+    #flickering-2 {
+      height: 36vw;
+      width: auto;
+      top: 34vw;
+    }
 
-#flickering-4 {
-  height: 34vw;
-  width: auto;
-  top: 72vw;
-}
+    #flickering-3 {
+      height: 34vw;
+      width: auto;
+      top: 42vw;
+    }
 
-#flickering-5 {
-  height: 37vw;
-  width: auto;
-  top: 78vw;
-}
+    #flickering-4 {
+      height: 34vw;
+      width: auto;
+      top: 72vw;
+    }
 
-#flickering-6 {
-  height: 34vw;
-  width: auto;
-  top: 117vw;
-}
+    #flickering-5 {
+      height: 37vw;
+      width: auto;
+      top: 78vw;
+    }
 
-#flickering-7 {
-  height: 37vw;
-  width: auto;
-  top: 117vw;
-}
+    #flickering-6 {
+      height: 34vw;
+      width: auto;
+      top: 117vw;
+    }
 
-#flickering-8 {
-  height: 37vw;
-  width: auto;
-  top: 156vw;
-}
+    #flickering-7 {
+      height: 37vw;
+      width: auto;
+      top: 117vw;
+    }
 
-#flickering-9 {
-  height: 33vw;
-  width: auto;
-  top: 158vw;
-}
+    #flickering-8 {
+      height: 37vw;
+      width: auto;
+      top: 156vw;
+    }
 
-#flickering-10 {
-  height: 38vw;
-  width: auto;
-  top: 195vw;
-}
+    #flickering-9 {
+      height: 33vw;
+      width: auto;
+      top: 158vw;
+    }
 
-#flickering-11 {
-  height: 32vw;
-  width: auto;
-  top: 196vw;
-}
+    #flickering-10 {
+      height: 38vw;
+      width: auto;
+      top: 195vw;
+    }
 
-#flickering-12 {
-  height: 34vw;
-  width: auto;
-  top: 235vw;
-}
+    #flickering-11 {
+      height: 32vw;
+      width: auto;
+      top: 196vw;
+    }
 
-#flickering-13 {
-  height: 39vw;
-  width: auto;
-  top: 237vw;
+    #flickering-12 {
+      height: 34vw;
+      width: auto;
+      top: 235vw;
+    }
+
+    #flickering-13 {
+      height: 39vw;
+      width: auto;
+      top: 237vw;
+    }
 }
 
 /* ==========================================================================
